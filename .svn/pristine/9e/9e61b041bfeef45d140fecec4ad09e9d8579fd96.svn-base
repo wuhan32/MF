@@ -1,0 +1,689 @@
+<template>
+<div id="Home">
+  <!-- 头部 -->
+  <header class="w">
+    <div class="logo">
+      <img src="../../assets/img/logo.png" alt />
+      <h1>大恒建设集团有限公司</h1>
+    </div>
+    <div class="download">
+      <div>
+        <a href="http://www.dahengzh.com/.com">www.dahengzh.com</a>
+        <img src="../../assets/img/app.png" alt />
+        <p>app下载</p>
+      </div>
+      <ul>
+        <li >
+          <i class="iconfont icon-weixinfang" style="color:#019934" />
+        </li>
+        <li>
+          <i class="iconfont icon-shouji" />
+        </li>
+        <li>
+          <i class="iconfont icon-zhongyingwenqiehuan" />
+        </li>
+        <li>
+          <el-tooltip class="item" effect="light" content="0756-3668888 " placement="top-start">
+            <i class="iconfont icon-ziyuan" />
+          </el-tooltip>
+        </li>
+        <li>
+          <el-tooltip
+            class="item"
+            effect="light"
+            content="dhjc@dahengzh.com "
+            placement="top-start"
+          >
+            <i class="iconfont icon-lunkuodasan-" style="color:var(--y)" />
+          </el-tooltip>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 导航栏 -->
+  <figcaption>
+    <ul class="w">
+      <li>首页</li>
+      <li>新闻中心</li>
+      <li>走进大恒</li>
+      <li>经营领域</li>
+      <li>企业文化</li>
+      <li>人力资源</li>
+      <li>社会责任</li>
+      <li>下载专区</li>
+      <li>联系我们</li>
+    </ul>
+  </figcaption>
+  <!-- 形象工程 -->
+  <figure class="w">
+    <img src="../../assets/img/111.jpg" alt />
+  </figure>
+
+  <!-- 主体 -->
+  <body class="w">
+    <!-- 信息化大恒 -->
+    <div>
+      <div class="main" style="height:180px">
+        <div class="main-header">
+          <h4>信息化大恒</h4>
+          <span>
+            更多信息
+            <i class="iconfont icon-iconfontarrowdown"></i>
+          </span>
+        </div>
+        <div class="xx-footer">
+          <ul>
+            <li>
+              <img src="../../assets/img/xf.png" alt />
+              <p>行政OA</p>
+            </li>
+            <li>
+              <img src="../../assets/img/xf.png" alt />
+              <p>车辆申请</p>
+            </li>
+            <li>
+              <img src="../../assets/img/xf.png" alt />
+              <p>合同管理</p>
+            </li>
+            <li class="more">
+              <span>MORE +</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="main" style="height:180px">
+          <div class="main-header">
+            <h4>大恒党建</h4>
+            <span>
+              更多信息
+              <i class="iconfont icon-iconfontarrowdown"></i>
+            </span>
+          </div>
+          <div class="dj-footer">
+            <ul class="dj-footer-body">
+              <li v-for="(item,index) in 10" :key="index">
+                <img src="../../assets/img/videoimg.png" alt />
+                <span>祝贺世纪啊实打实大师阿达123123123123123123123123</span>
+              </li>
+            </ul>
+            <img src="../../assets/img/videoimg.png" alt />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 轮播图 -->
+    <div class="swipert">
+      <el-carousel indicator-position="outside" autoplay>
+        <el-carousel-item>
+          <img src="../../assets/img/swiper.jpg" alt />
+        </el-carousel-item>
+        <el-carousel-item>
+          <img src="../../assets/img/swipert02 (1).jpg" alt />
+        </el-carousel-item>
+        <el-carousel-item>
+          <img src="../../assets/img/swipert02 (2).jpg" alt />
+        </el-carousel-item>
+      </el-carousel>
+    </div>
+
+    <!-- 新闻关注 -->
+    <div class="body-right">
+      <div class="body-right-header">
+        <h4>新闻关注</h4>
+        <span>123123123123123</span>
+      </div>
+      <div class="main" style="height:330px">
+        <div class="main-header">
+          <h4>信息化大恒</h4>
+          <span>
+            更多信息
+            <i class="iconfont icon-iconfontarrowdown"></i>
+          </span>
+        </div>
+        <div class="dt-footer">
+          <ul>
+            <li v-for="(item,index) in 10" :key="index">
+              <p>
+                <i class="iconfont icon-file"></i>
+                <span>谁离开后离婚我昂首爱啥都奥四季豆来说离婚就几点啦四季豆啦拉萨的垃圾搜</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 法律法规 -->
+    <div class="body-right body-right-t">
+      <div class="main" style="height:360px">
+        <div class="main-header">
+          <h4 class="main-header-p">
+            <p>法律法规</p>
+            <p>科技成果</p>
+            <p>绿色建筑</p>
+          </h4>
+          <span>
+            更多信息
+            <i class="iconfont icon-iconfontarrowdown"></i>
+          </span>
+        </div>
+        <div class="dt-footer">
+          <ul>
+            <li v-for="(item,index) in 8" :key="index" class="fl-gooter">
+              <p>
+                <i class="iconfont icon-file"></i>
+                <span>谁离开后离婚我昂首爱啥都奥四季豆来说离婚就几点啦四季豆啦拉萨的垃圾搜</span>
+              </p>
+              <span class="fl-gooter-time">2019-12-30</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 行业新闻 -->
+    <div class="body-right body-right-m">
+      <div class="main" style="height:360px">
+        <div class="main-header">
+          <h4 class="main-header-g">
+            <p>工会委员</p>
+            <p>行业新闻</p>
+          </h4>
+          <span>
+            更多信息
+            <i class="iconfont icon-iconfontarrowdown"></i>
+          </span>
+        </div>
+        <div class="dt-footer">
+          <ul>
+            <li v-for="(item,index) in 15" :key="index" class="fl-gooter">
+              <p>
+                <i class="iconfont icon-file"></i>
+                <span>谁离开后离婚我昂首爱啥都奥四季豆来说离婚就几点啦四季豆啦拉萨的垃圾搜</span>
+              </p>
+              <span class="fl-gooter-time">2019-12-30</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 企业视频 -->
+    <div class="body-right-t">
+      <div>
+        <div class="main" style="height:360px">
+          <div class="main-header">
+            <h4>企业视频</h4>
+            <span>
+              更多信息
+              <i class="iconfont icon-iconfontarrowdown"></i>
+            </span>
+          </div>
+          <div class="dj-footer">
+            <ul class="dj-footer-body" style="height:260px">
+              <li v-for="(item,index) in 10" :key="index">
+                <img src="../../assets/img/videoimg.png" alt />
+                <span>祝贺世纪啊实打实大师阿达123123123123123123123123</span>
+              </li>
+            </ul>
+            <img src="../../assets/img/videoimg.png" alt />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- 工程展示 -->
+  <footer class="w">
+    <div class="footer-r">
+      <div class="main-header">
+        <h4>工程展示</h4>
+        <span>
+          更多信息
+          <i class="iconfont icon-iconfontarrowdown"></i>
+        </span>
+      </div>
+      <div class="footer-r-body">
+        <img src="../../assets/img/gc01.png" alt />
+        <img src="../../assets/img/gc02.jpg" alt />
+        <img src="../../assets/img/gc03.jpg" alt />
+      </div>
+    </div>
+    <div class="footer-l">
+      <div class="footer-l-r">
+        <div class="main-header">
+          <h4>大恒总部</h4>
+        </div>
+        <!-- 地图 -->
+        <baidu-map :center="center" :zoom="zoom" @ready="handler" class="footer-l-m">
+          <bm-marker
+            :position="{lng: 113.571898, lat:22.283535}"
+            :dragging="true"
+            animation="BMAP_ANIMATION_BOUNCE"
+          >
+            <bm-label content="大恒建设集团" :labelStyle="labelStyle" :offset="{width: -35, height: 30}" />
+          </bm-marker>
+        </baidu-map>
+      </div>
+      <div class="footer-l-lj">
+        <div class="main-header">
+          <h4>友情链接</h4>
+        </div>
+        <div class="footer-l-lj-body">
+          <ul>
+            <li v-for="(item,index) in 20" :key="index">
+              <img src="../../assets/img/lj0000.png" alt />
+              <p>广东省建筑协会</p>
+            </li>
+          </ul>
+          <p>
+            更多.................
+            <i class="iconfont icon-iconfontarrowdown"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="footer-F" />
+
+  <div class="footer-ff w">
+    <p>版权所有：大恒建设集团有限公司 备案号：豫ICP备10010710号-1 地址：珠海市香洲区银桦路8号1505</p>
+  </div>
+
+  <el-backtop :right="10" :bottom="130">
+    <div
+      style="{
+        height: 100%;
+        width: 100%;
+        background-color: #f2f5f6;
+        box-shadow: 0 0 6px rgba(0,0,0, .12);
+        text-align: center;
+        line-height: 40px;
+        color: var(--g);
+      }"
+    >Top</div>
+  </el-backtop>
+</div>
+</template>
+
+<script>
+import { log } from "util";
+import { getHomeVanityproject } from "../../network/home";
+
+export default {
+  data() {
+    return {
+      center: { lng: 0, lat: 0 },
+      zoom: 3,
+      rTop: false,
+      vanityProject: "",
+      labelStyle: { color: "var(--g)", fontSize: "12px", border: "none" },
+    };
+  },
+  created() {
+    this.getHomeVanityproject();
+  },
+  mounted() {},
+  methods: {
+    handler({ BMap, map }) {
+      this.center.lng = 113.571898;
+      this.center.lat = 22.283535;
+      this.zoom = 18;
+    },
+
+    // 请求
+    async getHomeVanityproject() {
+      const res = await getHomeVanityproject().then();
+      console.log(res);
+    }
+  },
+
+  computed: {},
+  components: {}
+};
+</script>
+
+<style lang="less" scoped>
+#Home {
+  header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      width: 250px;
+      height: 50px;
+      display: flex;
+      h1 {
+        color: var(--y);
+        white-space: nowrap;
+        margin: 0;
+        margin-top: 60px;
+        margin-left: 10px;
+      }
+      img {
+        margin-top: 45px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .download {
+      display: flex;
+      position: relative;
+      
+      img {
+        width: 80px;
+        height: 80px;
+        margin: 0 10px;
+      }
+      p {
+        font-size: 12px;
+        margin-left: 168px;
+      }
+      ul {
+        margin-top: 58px;
+        display: flex;
+        li {
+          margin: 0 8px;
+          i {
+            font-size: 20px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  figcaption {
+    width: 100%;
+    margin: 40px 0;
+    background-color: var(--g);
+    ul {
+      display: flex;
+      li {
+        color: #fff;
+        line-height: 50px;
+        width: 100px;
+        text-align: center;
+      }
+      li:hover {
+        background: var(--y);
+        cursor: pointer;
+      }
+    }
+  }
+  figure {
+    height: 400px;
+    margin-bottom: 32px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    .main {
+      width: 480px;
+      .main-header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--g);
+        span {
+          font-size: 14px;
+        }
+        span:hover {
+          color: var(--y);
+        }
+      }
+    }
+    .swipert {
+      width: 460px;
+      height: 360px;
+      margin: 0 40px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .body-right {
+      width: 500px;
+      height: 360px;
+    }
+    .xx-footer {
+      ul {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        > :nth-child(2n) {
+          background-color: var(--g);
+        }
+        li:hover {
+          transition: all 0.2s linear;
+          transform: translatey(5px);
+        }
+
+        li {
+          width: 80px;
+          height: 80px;
+          background-color: var(--y);
+          text-align: center;
+          border-radius: 15px;
+          cursor: pointer;
+          img {
+            margin-top: 12px;
+            width: 40px;
+            height: 40px;
+          }
+          p {
+            color: #fff;
+            font-size: 12px;
+          }
+        }
+        .more {
+          span {
+            text-align: center;
+            line-height: 80px;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .dj-footer {
+      display: flex;
+      justify-content: space-between;
+      > img {
+        width: 150px;
+        height: 100px;
+      }
+      .dj-footer-body {
+        margin-top: 10px;
+        white-space: nowrap;
+        height: 100px;
+        overflow: hidden;
+        span:hover {
+          color: var(--y);
+          cursor: pointer;
+        }
+        li {
+          margin: 12px 0;
+          width: 250px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          img {
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+            vertical-align: middle;
+          }
+          span {
+          }
+        }
+      }
+    }
+    .body-right-header {
+      margin-bottom: 10px;
+      display: flex;
+      span {
+        margin-left: 30px;
+        line-height: 30px;
+      }
+    }
+    .dt-footer {
+      ul {
+        height: 280px;
+        overflow: hidden;
+        li {
+          margin: 15px 0;
+          p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 350px;
+            span:hover {
+              cursor: pointer;
+              color: var(--y);
+            }
+            i {
+              color: var(--r);
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
+    .body-right-m {
+      margin: 20px 20px;
+    }
+    .body-right-t {
+      margin: 20px 0;
+    }
+    .fl-gooter {
+      border-bottom: 1px solid #ccc;
+      position: relative;
+      p:hover {
+        color: var(--y);
+        cursor: pointer;
+      }
+      .fl-gooter-time {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    height: 250px;
+    .footer-r {
+      margin-right: 30px;
+      width: 1017px;
+      height: 100%;
+      .main-header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--g);
+        span {
+          font-size: 14px;
+        }
+        span:hover {
+          color: var(--y);
+        }
+      }
+      .footer-r-body {
+        display: flex;
+        justify-content: space-between;
+        img {
+          width: 300px;
+          height: 200px;
+          margin: 10px 0;
+        }
+      }
+    }
+    .footer-l {
+      display: flex;
+      .main-header {
+        display: flex;
+        justify-content: space-between;
+        span:hover {
+          color: var(--y);
+        }
+      }
+      .footer-l-r {
+        width: 350px;
+        .footer-l-m {
+          border: 1px solid #ccc;
+          height: 200px;
+          width: 250px;
+          margin-top: 8px;
+        }
+      }
+      .footer-l-lj {
+        .footer-l-lj-body {
+          p {
+            cursor: pointer;
+          }
+          p:hover {
+            color: var(--y);
+          }
+          ul {
+            height: 180px;
+            overflow: hidden;
+            li {
+              display: flex;
+              margin: 5px 0;
+              display: flex;
+              justify-content: space-between;
+
+              img {
+                margin-right: 20px;
+                width: 15px;
+                height: 15px;
+              }
+              p {
+                width: 100px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 15px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-F {
+    margin: 10px 0;
+    height: 40px;
+    background: var(--g);
+  }
+  .footer-ff {
+    p {
+      text-align: center;
+      line-height: 55px;
+    }
+  }
+  .main-header-p {
+    display: flex;
+    width: 300px;
+    p {
+      width: 100px;
+      text-align: center;
+    }
+  }
+  .main-header-g {
+    display: flex;
+    width: 200px;
+    p {
+      width: 100px;
+      text-align: center;
+    }
+  }
+}
+</style>

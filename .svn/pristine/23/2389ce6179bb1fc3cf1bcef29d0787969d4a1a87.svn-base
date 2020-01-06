@@ -1,0 +1,32 @@
+<template>
+  <div id="Home">
+    <header>
+      <div class="logo"></div>
+      <div class="download"></div>
+    </header>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {};
+  },
+  mounted() {},
+  methods: {},
+  computed: {},
+  components: {}
+};
+</script>
+
+<style lang="less" scoped>
+#Home {
+  header {
+    .logo {
+      width: 150px;
+      height: 150px;
+      border: 1px solid red;
+    }
+  }
+}
+</style>

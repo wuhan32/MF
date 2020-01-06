@@ -1,0 +1,58 @@
+{
+  "id": "1590004",
+  "name": "dhjsMF",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "394752",
+      "name": "iconfont-arrowdown",
+      "font_class": "iconfontarrowdown",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "1105010",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "1239480",
+      "name": "中英文切换",
+      "font_class": "zhongyingwenqiehuan",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "1523211",
+      "name": "拨打电话",
+      "font_class": "ziyuan",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "1605773",
+      "name": "文件",
+      "font_class": "file",
+      "unicode": "e6ea",
+      "unicode_decimal": 59114
+    },
+    {
+      "icon_id": "1920212",
+      "name": "微信方",
+      "font_class": "weixinfang",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "10351508",
+      "name": "邮件 信息",
+      "font_class": "lunkuodasan-",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    }
+  ]
+}
