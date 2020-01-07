@@ -5,15 +5,25 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data(){
+    return{
+
+    }
+
+  },
+
+  
+};
+
 </script>
 
 <style lang="less" scoped>
 @import "assets/css/base.css";
 @import "assets/css/timeline.min.css";
-@media screen and (max-width: 750px ) {
+@media screen and (max-width: 1100px ) {
   #app {
-    width: 1600px;
+   width: 1600px; 
   }
 }
 </style>

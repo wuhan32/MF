@@ -1,59 +1,20 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-
-import mutations from './mutations'
-import actions from './actions'
-import getters from './getters'
+import Vue from 'vue'
+import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-const state = {
-    tabbar: [
-        {
-            name: "首页",
-            path: "/home"
-        },
-        {
-            name: "新闻中心",
-            path: "/news"
-        },
-        {
-            name: "走进大恒",
-            path: "/approachDh"
-        },
-        {
-            name: "经营领域",
-            path: "/manage"
-        },
-        {
-            name: "企业文化",
-            path: "/enterpriseCulture"
-        },
-        {
-            name: "人力资源",
-            path: "/manpower"
-        },
-        {
-            name: "社会责任",
-            path: "/"
-        },
-        {
-            name: "下载专区",
-            path: "/downLoad"
-        },
-        {
-            name: "联系我们",
-            path: "/contactUs"
-        }
-    ],
-    tabbarIndex:1
-}
-
-const store = new Vuex.Store({
-    state,
-    mutations,
-    actions,
-    getters
+export default new Vuex.Store({
+  state: {
+    searchKey: 0       //存储词条的变量
+  },
+  mutations: {                 //修改数据仓库的事件
+    changeSearchKey(state,value){
+      state.searchKey = value
+    }
+  },
+  actions: {                 //推荐使用的异步修改数据仓库
+    setSearchKey(context,value){   
+      context.commit('changeSearchKey',value)
+   }
+  }
 })
-
-export default store

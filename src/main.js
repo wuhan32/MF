@@ -2,7 +2,6 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
-
 import './assets/fonts/iconfont.css'
 
 import ElementUI from 'element-ui';
@@ -14,7 +13,7 @@ import store from './store/index'
 import BaiduMap from 'vue-baidu-map'
 
 Vue.use(BaiduMap, {
-  ak:  'dCkIZZ92XGySSARRAqZuqPT4N8TLlZ4F'
+  ak: 'dCkIZZ92XGySSARRAqZuqPT4N8TLlZ4F'
 })
 
 Vue.use(ElementUI);

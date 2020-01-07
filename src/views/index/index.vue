@@ -50,13 +50,12 @@
           v-for="(item,index) in tabbar"
           :key="index"
           @click.native="toTabbars(index)"
-          :class="tabbarIndex==index ? 'tabbary' : ''"
+          :class="{tabbary :tabbarIndex == index }"
         >{{ item.name }}</router-link>
       </ul>
     </figcaption>
-    <keep-alive>
-      <router-view></router-view>
-    </keep-alive>
+
+    <router-view></router-view>
 
     <div class="footer-F" />
 
@@ -85,20 +84,71 @@ import { listLoad } from "../../network/home";
 export default {
   data() {
     return {
-      tabbar: this.$store.state.tabbar,
-      tabbarIndex: "",
+     tabbar: [
+        {
+            name: "首页",
+            path: "/home"
+        },
+        {
+            name: "新闻中心",
+            path: "/news"
+        },
+        {
+            name: "走进大恒",
+            path: "/approachDh"
+        },
+        {
+            name: "经营领域",
+            path: "/manage"
+        },
+        {
+            name: "企业文化",
+            path: "/enterpriseCulture"
+        },
+        {
+            name: "人力资源",
+            path: "/manpower"
+        },
+        {
+            name: "社会责任",
+            path: "/"
+        },
+        {
+            name: "下载专区",
+            path: "/downLoad"
+        },
+        {
+            name: "联系我们",
+            path: "/contactUs"
+        }
+    ],
+      tabbarIndex: 0,
       message: []
     };
   },
   beforeMount() {
-    this.tabbarIndex = localStorage.getItem("tabarIndex");
+    // this.tabbarIndex = localStorage.getItem("tabarIndex");
   },
   created() {
     this.listLoad();
+    // this.tabbar = this.$store.state.tabbar;
   },
+  computed: {                     //监听词条
+        getSearchKey(){
+            return this.$store.state.searchKey
+        }
+    },
+    watch: {
+        getSearchKey: {
+            handler(newValue,oldValue){  //当词条改变时执行事件
+                this.tabbarIndex=newValue;
+            }
+        }
+
+    },
   methods: {
     toTabbars(index) {
-      localStorage.setItem("tabarIndex", index);
+      this.$store.dispatch('setSearchKey',index);
       this.tabbarIndex = index;
     },
     //新闻列表

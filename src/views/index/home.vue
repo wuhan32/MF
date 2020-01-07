@@ -90,7 +90,7 @@
         </div>
         <div class="dt-footer">
           <ul>
-            <li v-for="(item,index) in news" :key="index" @click="newsO(item.id)">
+            <li v-for="(item,index) in message" :key="index" @click="newsO(item.id)">
               <p>
                 <i class="iconfont icon-file"></i>
                 <span>{{ item.title }}</span>
@@ -149,12 +149,7 @@
         </div>
         <div class="dt-footer">
           <ul>
-            <li
-              v-for="(item,index) in message"
-              :key="index"
-              class="fl-gooter"
-              @click="newsO(item.id)"
-            >
+            <li v-for="(item,index) in news" :key="index" class="fl-gooter" @click="newsO(item.id)">
               <p>
                 <i class="iconfont icon-file"></i>
                 <span>{{ item.title }}</span>
@@ -323,14 +318,15 @@ export default {
       window.open("http://www.dahengzh.com:8080/oa/userinfo/login");
     },
     goMap() {
-      localStorage.setItem("tabarIndex", 8);
+      this.$store.dispatch("setSearchKey", 8);
       this.$router.push("/contactUs");
     },
     blogrollO(O) {
       window.open(O);
     },
     newsO(id) {
-      localStorage.setItem("tabarIndex",1)
+      console.log(this.$store.commit("increment", 1));
+      this.$store.dispatch("setSearchKey", 1);
       this.$router.push({
         name: "news",
         params: {
@@ -378,10 +374,10 @@ export default {
     async listLoad() {
       const { data: res } = await listLoad().then();
       res.rows.forEach(element => {
-        if (element.infotype == "message") {
+        if (element.infotype == "message" || element.infotype == "green") {
           return this.message.push(element);
         }
-        if (element.infotype == "construction") {
+        if (element.infotype == "construction" || element.infotype == "study") {
           return this.construction.push(element);
         }
         if (element.infotype == "news") {

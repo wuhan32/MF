@@ -1,6 +1,8 @@
 <template>
   <div class="w">
-    <div v-html="infocontent" v-if="infocontent"></div>
+    <div v-if="infocontent">
+      <div v-html="infocontent"></div>
+    </div>
     <div v-else>
       <h4 style="text-align: center;">昂首奋进七十载 风云激荡见初心——写在新中国成立70周年之际</h4>
       <h6 style="text-align: center;">
@@ -146,10 +148,8 @@ export default {
       infocontent: ""
     };
   },
- 
-  beforeCreate(){
 
-  },
+  beforeCreate() {},
   created() {
     this.getById();
   },
@@ -165,6 +165,10 @@ export default {
 
 <style lang="less" scoped>
 p {
-  line-height: 25px;
+  line-height: 35px !important;
+  text-indent: 2em !important;
+}
+.w {
+  width: 1200px;
 }
 </style>
