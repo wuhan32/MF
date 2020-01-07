@@ -63,6 +63,10 @@ export default {};
       padding: 8px;
     }
   }
+  .body-B:hover {
+    transform: translateX(20px);
+    transition: 0.4s;
+  }
   .body-B {
     display: flex;
     margin-top: 15px;

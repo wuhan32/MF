@@ -54,8 +54,9 @@
         >{{ item.name }}</router-link>
       </ul>
     </figcaption>
-
-    <router-view></router-view>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
 
     <div class="footer-F" />
 
@@ -84,44 +85,7 @@ import { listLoad } from "../../network/home";
 export default {
   data() {
     return {
-      tabbar: [
-        {
-          name: "首页",
-          path: "/home"
-        },
-        {
-          name: "新闻中心",
-          path: "/news"
-        },
-        {
-          name: "走进大恒",
-          path: "/approachDh"
-        },
-        {
-          name: "经营领域",
-          path: "/manage"
-        },
-        {
-          name: "企业文化",
-          path: "/enterpriseCulture"
-        },
-        {
-          name: "人力资源",
-          path: "/manpower"
-        },
-        {
-          name: "社会责任",
-          path: "/"
-        },
-        {
-          name: "下载专区",
-          path: "/downLoad"
-        },
-        {
-          name: "联系我们",
-          path: "/contactUs"
-        }
-      ],
+      tabbar: this.$store.state.tabbar,
       tabbarIndex: "",
       message: []
     };
@@ -130,7 +94,7 @@ export default {
     this.tabbarIndex = localStorage.getItem("tabarIndex");
   },
   created() {
-    this.listLoad()
+    this.listLoad();
   },
   methods: {
     toTabbars(index) {
@@ -143,7 +107,6 @@ export default {
       res.rows.forEach(element => {
         if (element.infotype == "message") {
           return this.message.push(element);
-          console.log(this.message);
         }
       });
     }

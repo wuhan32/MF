@@ -164,4 +164,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
+p {
+  line-height: 25px;
+}
 </style>

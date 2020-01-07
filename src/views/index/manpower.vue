@@ -1,7 +1,7 @@
 <template>
   <div class="w">
     <div class="body-A">
-      <h4 class="HH4">人力资源</h4>
+      <!-- <h4 class="HH4">人力资源</h4>
       <el-breadcrumb separator-class="el-icon-arrow-right">
         <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
         <el-breadcrumb-item>人力资源</el-breadcrumb-item>
@@ -10,17 +10,14 @@
         <el-breadcrumb-item v-else-if="Id == 2">职业发展</el-breadcrumb-item>
         <el-breadcrumb-item v-else-if="Id == 3">招聘信息</el-breadcrumb-item>
         <el-breadcrumb-item v-else-if="Id == 4">信息公示</el-breadcrumb-item>
-      </el-breadcrumb>
+
+      </el-breadcrumb>-->
+      <img src="../../assets/img/111.jpg" alt />
     </div>
     <el-row class="tac">
       <el-col :span="2">
         <el-menu class="el-menu-vertical-demo" active-text-color="var(--y)" default-active="1">
-          <el-menu-item
-            v-for="(item,i) in Arr"
-            :key="i"
-            @click="tabbarO(i)"
-            :index="i"
-          >
+          <el-menu-item v-for="(item,i) in Arr" :key="i" @click="tabbarO(i)" :index="i">
             <i class="el-icon-caret-right"></i>
             <span slot="title">{{ item.name }}</span>
           </el-menu-item>
@@ -241,8 +238,14 @@ export default {
     color: var(--y);
   }
 }
-
+.w {
+  margin-left: 350px;
+}
 .body-A {
+  img {
+    width: 1046px;
+    margin-bottom: 20px;
+  }
   display: flex;
   .el-breadcrumb {
     margin-left: 20px;

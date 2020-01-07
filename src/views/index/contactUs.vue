@@ -13,11 +13,9 @@
 
     <!-- 地图 -->
     <baidu-map :center="center" :zoom="zoom" @ready="handler" class="footer-l-m">
-      <bm-marker
-        :position="{lng: 113.571898, lat:22.283535}"
-        :dragging="true"
-        :icon="{url: 'http://www.dahengzh.com:8888/group1/M00/00/02/rBLQ3V4SoYuAW3QJAAAImyek_mo492.jpg', size: {width: 300, height: 157}}"
-      ></bm-marker>
+      <bm-marker :position="{lng: 113.571898, lat:22.283535}" :dragging="true">
+        <bm-label content="大恒建设集团" :labelStyle="labelStyle" :offset="{width: -35, height: 30}" />
+      </bm-marker>
     </baidu-map>
   </div>
 </template>

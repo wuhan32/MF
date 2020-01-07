@@ -8,10 +8,8 @@ import './assets/fonts/iconfont.css'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
-//状态管理
-import vuex from 'vuex'
-Vue.use(vuex);
-import {store} from './store/index'
+
+import store from './store/index'
 
 import BaiduMap from 'vue-baidu-map'
 

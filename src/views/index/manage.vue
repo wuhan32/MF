@@ -1,34 +1,37 @@
 <template>
   <div class="w">
-    <div class="body-b">
-      <h2>项目地点</h2>
-    </div>
+    <div class="body-b"></div>
     <div class="body-c">
       <div>
-        <h3>唐家小学</h3>
-        <p>地址：</p>
-        <p>电话：</p>
-        <p>传真：</p>
+        <i class="iconfont icon-cjapp"></i>
+        <h3>市政公用工程</h3>
       </div>
       <div>
-        <h3>档案馆</h3>
+        <i class="iconfont icon-fangwujianzhu"></i>
+        <h3>房屋建筑工程</h3>
       </div>
       <div>
-        <h3>农产品</h3>
+        <i class="iconfont icon-huanbao"></i>
+        <h3>环保工程</h3>
       </div>
       <div>
-        <h3>世纪城农贸市场</h3>
+        <i class="iconfont icon-zhuangxiujiajuketingchangshafashuangrenqijushi"></i>
+        <h3>建筑装饰装修设计与施工</h3>
       </div>
       <div>
-        <h3>海誉雅阁</h3>
+        <i class="iconfont icon-xiaofang"></i>
+        <h3>消防工程</h3>
       </div>
       <div>
-        <h3>航空城中学</h3>
+        <i class="iconfont icon-ludeng"></i>
+        <h3>城市及道路照明工程</h3>
       </div>
       <div>
-        <h3>公安分局</h3>
+        <i class="iconfont icon-yuanlin"></i>
+        <h3>园林绿化工程</h3>
       </div>
       <div>
+        <i class="iconfont icon-gengduo"></i>
         <h3>更多</h3>
       </div>
     </div>
@@ -53,13 +56,18 @@ export default {};
 .body-c {
   display: flex;
   flex-wrap: wrap;
+  div:hover {
+    transform: translateY(-20px);
+    transition: 0.4s;
+  }
   div {
     width: 345px;
     height: 250px;
     border: 1px solid #f5f6f7;
     margin: 20px 20px;
     background-color: #f5f6f7;
-    padding: 0 40px;
+    padding: 20px 40px;
+    box-shadow: 1px 0px 5px var(--y);
     h3 {
       width: 150px;
       font-size: 18px;
@@ -68,15 +76,16 @@ export default {};
       text-align: center;
       color: #524d4e;
     }
+    .iconfont {
+      display: inline-block;
+      font-size: 130px;
+      color: var(--y);
+      text-align: center;
+      width: 250px;
+    }
     :nth-child(2) {
       margin-top: 20px;
     }
-    p {
-      font-size: 15px;
-      line-height: 2;
-      color: #524d4e;
-    }
   }
-  
 }
 </style>

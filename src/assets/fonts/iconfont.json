@@ -13,6 +13,20 @@
       "unicode_decimal": 58894
     },
     {
+      "icon_id": "414667",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "712733",
+      "name": "房屋建筑",
+      "font_class": "fangwujianzhu",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
       "icon_id": "1105010",
       "name": "手机",
       "font_class": "shouji",
@@ -46,6 +60,48 @@
       "font_class": "weixinfang",
       "unicode": "e61b",
       "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "3296560",
+      "name": "环保",
+      "font_class": "huanbao",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "3845020",
+      "name": "路灯",
+      "font_class": "ludeng",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "3989411",
+      "name": "市政",
+      "font_class": "cjapp",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "4145233",
+      "name": "装修 家居 客厅 长沙发 双人 起居室 ",
+      "font_class": "zhuangxiujiajuketingchangshafashuangrenqijushi",
+      "unicode": "e974",
+      "unicode_decimal": 59764
+    },
+    {
+      "icon_id": "6924587",
+      "name": "消防",
+      "font_class": "xiaofang",
+      "unicode": "e7de",
+      "unicode_decimal": 59358
+    },
+    {
+      "icon_id": "8378498",
+      "name": "园林",
+      "font_class": "yuanlin",
+      "unicode": "e602",
+      "unicode_decimal": 58882
     },
     {
       "icon_id": "10351508",

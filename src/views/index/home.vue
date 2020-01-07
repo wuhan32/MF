@@ -323,13 +323,14 @@ export default {
       window.open("http://www.dahengzh.com:8080/oa/userinfo/login");
     },
     goMap() {
-      localStorage.setItem('tabarIndex',8)
+      localStorage.setItem("tabarIndex", 8);
       this.$router.push("/contactUs");
     },
     blogrollO(O) {
       window.open(O);
     },
     newsO(id) {
+      localStorage.setItem("tabarIndex",1)
       this.$router.push({
         name: "news",
         params: {
