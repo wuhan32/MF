@@ -1,174 +1,91 @@
 <template>
-  <div class="w">
-    <div v-if="infocontent">
-      <div v-html="infocontent"></div>
+  <div class="w news">
+    <div class="news-left">
+      <img src="../../assets/img/qysm01.jpg" alt />
     </div>
-    <div v-else>
-      <h4 style="text-align: center;">昂首奋进七十载 风云激荡见初心——写在新中国成立70周年之际</h4>
-      <h6 style="text-align: center;">
-        <label>来源:中国珠海网 &nbsp;&nbsp;&nbsp; 发布日期：2019-09-30 08:35</label>
-      </h6>
-      <div class="nr" id="new_zh">
-        <div class="TRS_Editor">
-          <p style="text-align: left;">金秋时节，天高云阔，珠海处处花团锦簇。</p>
-          <p
-            style="text-align: left;"
-          >从人流如织的拱北口岸，到高楼林立的十字门畔，从大街小巷到公园广场，一面面鲜艳明亮的五星红旗迎风飘扬，恰如江河奔流，气象万千。</p>
-          <p style="text-align: left;">放眼眺望，绵延55公里的港珠澳大桥飞架伶仃洋，往返三地的穿梭车辆日夜不息，一幅粤港澳大湾区发展的宏伟蓝图正徐徐展开。</p>
-          <p style="text-align: left;">在风云激荡中砥砺前行，我们即将迎来新中国成立70周年。</p>
-          <p style="text-align: left;">改革不息、追梦不止。致敬历史，壮行未来。</p>
-          <p style="text-align: left;">今年是澳门回归20周年，是珠海建市40周年。奋进的珠海，正致力书写不负时代的更大荣光。</p>
-          <p style="text-align: left;">
-            <strong>筚路蓝缕 特区启航</strong>
-          </p>
-          <p style="text-align: left;">星霜荏苒，初心不改。</p>
-          <p
-            style="text-align: left;"
-          >在珠海淇澳岛的白石街上，有一座素朴的矮墙小院，两间青砖灰瓦的平房——中国共产党早期重要领导人之一的苏兆征故居陈列馆就坐落于此。</p>
-          <p style="text-align: left;">如今，这里每天都迎来越来越多的参观者，大家观看展览、聆听讲解，重温入党誓词，坚定理想信念，更加充满对伟大事业的壮志豪情。</p>
-          <p
-            style="text-align: left;"
-          >丰碑无言，誓言有声。历史不会忘记，被誉为“珠海红色三杰”的苏兆征、杨匏安、林伟民，为挽救民族危亡、实现人民解放作出了卓越贡献。</p>
-          <p style="text-align: left;">70年披荆斩棘，70年风雨兼程。新中国的诞生来之不易，新中国的建设成就来之不易。</p>
-          <p style="text-align: left;">探寻与求索、奋斗与崛起，这是新中国的光荣与梦想，亦映照着一座城市的坚持与守望。</p>
-          <p
-            style="text-align: left;"
-          >改革开放的伟大征程，如同春雷唤醒大地，书写了一个国家繁荣发展的壮丽史诗，激荡起一个民族生机勃勃的复兴气象，也为我们热爱的这座城市，擘画出无与伦比的时代巨变。</p>
-          <p
-            style="text-align: left;"
-          >珠海经济特区是时任广东省委第一书记习仲勋同志主政广东期间向党中央提出建议、中国改革开放的总设计师邓小平同志亲自决定建立的第一批经济特区之一。</p>
-          <p style="text-align: left;">1979年，珠海正式撤县建市，这座只有“一间粮站、一家饭店、一条小马路、一盏红绿灯”的边陲小镇，在“一穷二白”中迈开步伐。</p>
-          <p style="text-align: left;">1980年8月，中央决定在珠海、深圳、汕头等地创办经济特区。从此，敢闯敢试、敢为人先就成了特区的精气神，时代的最强音。</p>
-          <p style="text-align: left;">1984年，改革开放的总设计师邓小平第一次踏上珠海的土地视察，欣然写下“珠海经济特区好”，照亮珠海经济特区勇往直前的道路。</p>
-          <p
-            style="text-align: left;"
-          >40年来，珠海逢山开路，遇水架桥，彻底改变了昔日偏居一隅的交通格局。机场、港口、铁路等基础设施，一连串决定珠海长远发展的“命运工程”与“奠基工程”相继建成。</p>
-          <p
-            style="text-align: left;"
-          >40年来，珠海屡开风气之先，开办全国第一家“三来一补”企业——香洲毛纺厂，创建全国第一个跨境工业区——珠澳跨境工业区，出台全国首部社会保险法规，推出影响深远的科技重奖，打造举世瞩目的中国航展……</p>
-          <p
-            style="text-align: left;"
-          >回首过去40年，在党中央、国务院的亲切关怀和坚强领导下，在广东省委、省政府的带领下，珠海经济特区的建设者解放思想、率先探索，团结带领全市人民艰苦奋斗、不辱使命，在改革开放中发挥了“试验田”和重要“窗口”作用，为全省乃至全国作出了重要贡献。</p>
-          <p style="text-align: left;">
-            <strong>勇闯新路 梦想前行</strong>
-          </p>
-          <p style="text-align: left;">一滴水可以反映出太阳的光辉，一个地方可以体现一个国家的风貌。</p>
-          <p style="text-align: left;">2009年8月14日，横琴新区横空出世，成为继上海浦东新区、天津滨海新区之后，第三个由国务院批准设立的国家级新区。</p>
-          <p
-            style="text-align: left;"
-          >2015年4月23日,中国（广东）自由贸易试验区珠海横琴新区片区正式挂牌成立，标志着横琴由此进入“自贸时代”，珠海也掀起全面深化改革和扩大开放的新热潮。</p>
-          <p
-            style="text-align: left;"
-          >十年磨一剑，横琴地区生产总值从2.85亿元增长到244.1亿元，实有商事主体突破6万家，累计落地制度创新成果370项……从蕉林绿野、农庄寥落，到金融产业集聚、高端服务业进驻，横琴正在成为珠海乃至整个粤港澳大湾区的“掌上明珠”。</p>
-          <p style="text-align: left;">“企业注册能不能像在港澳一样简便？”前来珠海投资的澳门企业主的一句话，在横琴催生了全国领先的商事登记制度改革。</p>
-          <p
-            style="text-align: left;"
-          >常住横琴的澳门居民可参加珠海医保，横琴-澳门开通跨境通勤巴士，横琴口岸实现24小时通关，智能办税业务延伸至港澳的大街小巷……横琴与澳门的心手相连，正在一件件民生“小事”、一桩桩创新“福利”中春风化雨、润物无声。</p>
-          <p style="text-align: left;">在本没有路的地方，勇敢探出一条新路；在历史赋予的考题前，留下荡气回肠的答卷——这是珠海坚定的初心、响亮的回答、永恒的使命。</p>
-          <p
-            style="text-align: left;"
-          >梦想，总是一切奋斗的起点。40年来，在全球竞逐的舞台上，格力电器、纳思达、丽珠制药等一大批企业奋楫争先，留下了珠海创新前行的足迹。</p>
-          <p
-            style="text-align: left;"
-          >与珠海相距3200公里之遥的酒泉卫星发射中心，长征火箭托举着欧比特“珠海一号”5颗高光谱卫星奔赴太空，与在轨的7颗卫星“会合”。</p>
-          <p style="text-align: left;">这是中国首个由民营上市企业投资并运营的卫星星座，将在国际商用宇航版图上牢牢占据一席之地。</p>
-          <p
-            style="text-align: left;"
-          >一项项自主创新，一个个“大国重器”，从我国首款大型水陆两栖飞机“鲲龙”AG600首飞到珠海云洲智能无人船参与南极科考，在科技创新的广袤和无垠里，珠海的“高光时刻”频频亮相。</p>
-          <p
-            style="text-align: left;"
-          >彰显开放魅力，共享全球愿景。20多年来，中国航展成为我国乃至国际航空航天产业的创新跨越发展平台。从中以科技创新投资大会、中拉博览会到“海丝”国际传播论坛、澳珠企业家峰会，一系列国际盛事接踵而至。</p>
-          <p
-            style="text-align: left;"
-          >一座城市有一座城市的品格。守住蓝天白云、青山绿水，生态文明的底色铸就珠海，描绘如新。文化、教育、医疗、养老、生态等领域一系列创新举措，更为100多万珠海人带去“稳稳”的幸福感，让各类人才愿意来、留得住。</p>
-          <p
-            style="text-align: left;"
-          >珠江的水，香江的风，濠江的灯火，相映成一幅生生不息的美好画卷。“浪漫之城”尽显迷人的风姿，从人杰地灵的唐家古镇到凭海临风的珠海大剧院，一座座文化地标彰显了城市的底蕴与气质。横琴国际休闲旅游岛建设全面铺开，从长隆海洋王国到星乐度露营小镇、丽新横琴创新方等一批全球领先、独具特色的旅游项目“串珠成链”。</p>
-          <p style="text-align: left;">诗与远方，在一代代珠海人的不懈奋斗中悄然交汇，奔向梦想的脚步从未停歇。</p>
-          <p style="text-align: left;">
-            <strong>不忘初心 勇立潮头</strong>
-          </p>
-          <p style="text-align: left;">春天的故事，开启新的篇章。</p>
-          <p
-            style="text-align: left;"
-          >2012年12月，习近平总书记在党的十八大后离京视察“第一站”就来到广东并亲临珠海，勉励珠海大胆地试、大胆地闯，做到改革不停顿、开放不止步，深化粤港澳合作，努力相互促进、互利共赢。</p>
-          <p
-            style="text-align: left;"
-          >“改革不停顿、开放不止步，中国一定会有让世界刮目相看的新的更大奇迹。”2018年10月，在改革开放40周年之际，习近平总书记再次踏足广东这片热土，向世界旗帜鲜明宣示了高举新时代改革开放旗帜、把改革开放不断推向深入的坚定决心。</p>
-          <p
-            style="text-align: left;"
-          >掌舵领航、把脉定向。习近平总书记强调，深圳、珠海等经济特区的成功经验要坚持并不断完善，要弘扬敢闯敢试、敢为人先的改革精神，立足自身优势，创造更多经验，把改革开放的旗帜举得更高更稳。</p>
-          <p
-            style="text-align: left;"
-          >亲切关怀，殷切期望，激励着珠海人深刻认识在全国全省工作大局中担当的使命责任，切实扛起先行先试、大胆探索、为全国全省改革开放贡献力量的新使命。</p>
-          <p
-            style="text-align: left;"
-          >珠江之水滚滚向前，南海之潮浩浩荡荡。建设粤港澳大湾区，是习近平总书记亲自谋划、亲自部署、亲自推动的重大国家战略，是新时代推动形成全面开放新格局的新举措，也是推动“一国两制”事业发展的新实践。</p>
-          <p
-            style="text-align: left;"
-          >高举习近平新时代中国特色社会主义思想伟大旗帜，珠海全市上下正全面贯彻落实习近平总书记对广东重要讲话和重要指示批示精神，以新担当新作为奋力开创珠海工作新局面。</p>
-          <p
-            style="text-align: left;"
-          >国家和省对珠海寄予厚望。今年2月，中共中央、国务院正式印发《粤港澳大湾区发展规划纲要》。与澳门共同打造粤港澳大湾区澳珠一极，珠海将迎来更加广阔的舞台，承担更大使命和职责。</p>
-          <p
-            style="text-align: left;"
-          >“黄金窗口”与“时代考卷”摆在面前，珠海正举全市之力积极参与粤港澳大湾区建设，奋力打造粤港澳大湾区重要门户枢纽、珠江口西岸核心城市和沿海经济带高质量发展典范。</p>
-          <p
-            style="text-align: left;"
-          >“我们始终要不忘初心，让这里充满创新发展活力，促进澳门经济适度多元化发展。”习近平总书记十年间四次到横琴新区视察，殷殷嘱托，字字千钧。</p>
-          <p
-            style="text-align: left;"
-          >今年3月，全国首个跨境办公试点楼宇——横琴总部大厦揭牌成立，近4万平方米的空间内已有近20家澳门企业入驻。从横琴·澳门青年创业谷、粤澳合作中医药科技产业园到粤澳跨境金融合作示范区，为服务澳门设立的载体平台星罗棋布，珠海紧扣科技创新、特色金融、医疗健康、跨境商贸、文旅会展、专业服务等六大产业，助推澳门产业多元发展。</p>
-          <p
-            style="text-align: left;"
-          >横琴口岸实行“合作查验、一次放行”通关模式，“澳门新街坊”综合民生项目加快建设，粤澳合作产业园剩余2.57平方公里实施由澳门主导的共商共建共管新机制……一系列制度创新举措，推进珠澳深度合作，粤港澳大湾区澳珠一极的“化学反应”持续升级。</p>
-          <p
-            style="text-align: left;"
-          >“我们将举全市之力参与粤港澳大湾区建设，在服务澳门经济适度多元发展、推进粤港澳大湾区澳珠一极建设中发挥更大作用。”市委书记、市人大常委会主任郭永航表示。</p>
-          <p style="text-align: left;">70年风云激荡，70年壮丽辉煌。身处历史与未来的交汇点，回眸是波澜壮阔的历史长歌，前望是激动人心的时代新航。</p>
-          <p
-            style="text-align: left;"
-          >大潮涌珠江，奋进正当时。粤港澳大湾区的美好愿景呼唤我们笃定前行、永不懈怠，服务澳门经济适度多元发展的初心使命激励我们敢于担当、勇于创新。</p>
-          <p style="text-align: left;">牢记初心使命，闯出发展新路。不负总书记嘱托，不负新时代机遇，用拼搏和奋斗书写珠海发展的新答卷！（来源：珠海特区报）</p>
-        </div>
-      </div>
-      <p>
-        <br />
-      </p>
+    <div>
+      <ul>
+        <li v-for="item in news" :key="item.id" @click="newsO(item.id)">
+          <a href>
+            <span>{{ item.title }}</span>
+            <span>{{ item.issuerdate }}</span>
+          </a>
+        </li>
+      </ul>
+      <el-pagination
+        @current-change="handleCurrentChange"
+        :page-sizes="[5, 10, 20, 40]"
+        :page-size="rows"
+        layout="total, prev, pager, next, jumper"
+        :total="total"
+      ></el-pagination>
     </div>
   </div>
 </template>
 
 <script>
-import { getById } from "../../network/home";
+import { listLoad } from "../../network/home";
+
+import { log } from "util";
 export default {
   data() {
     return {
-      id: this.$route.params.id,
-      infocontent: ""
+      infocontent: "",
+      news: "",
+      page: 1,
+      rows: 11,
+      total: 0,
+      sumPage: 1
     };
   },
-
   beforeCreate() {},
   created() {
-    this.getById();
+    this.listLoad();
   },
   methods: {
-    //工程展示
-    async getById() {
-      const { data: res } = await getById(this.id).then();
-      this.infocontent = res.data.infocontent;
+    handleCurrentChange(size) {
+      this.page = size;
+      this.listLoad();
+    },
+    newsO(id) {
+      let routeUrl = this.$router.resolve({
+        path: "/newsInfo",
+        query: { id: id }
+      });
+      window.open(routeUrl.href, "_blank");
+    },
+    //新闻列表
+    async listLoad() {
+      const { data: res } = await listLoad(this.page, this.rows).then();
+      this.total = res.total;
+      this.sumPage = Math.ceil(this.total / this.rows);
+      this.news = res.rows;
     }
   }
 };
 </script>
 
 <style lang="less" scoped>
-p {
-  line-height: 35px !important;
-  text-indent: 2em !important;
-}
-.w {
-  width: 1200px;
+.news {
+  width: 1500px;
+  display: flex;
+  .news-left {
+    margin-right: 20px;
+    img {
+      width: 250px;
+      min-height: 600px;
+    }
+  }
+  ul {
+    min-height: 600px;
+    margin-bottom: 20px;
+    li {
+      line-height: 50px;
+      border-bottom: 1px solid #ccc;
+    }
+    li:hover {
+      color: var(--y);
+    }
+  }
 }
 </style>

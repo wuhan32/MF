@@ -12,26 +12,26 @@
       <div class="main" style="height:180px">
         <div class="main-header">
           <h4 class="HH4">信息化大恒</h4>
-          <span>
+          <span @click="goMd">
             更多信息
             <i class="iconfont icon-iconfontarrowdown"></i>
           </span>
         </div>
         <div class="xx-footer">
-          <ul @click="goMf">
-            <li>
+          <ul>
+            <li @click="goMf">
               <img src="../../assets/img/xf.png" alt />
               <p>行政OA</p>
             </li>
-            <li>
+            <li @click="goMf">
               <img src="../../assets/img/xf.png" alt />
               <p>车辆申请</p>
             </li>
-            <li>
+            <li @click="goMf">
               <img src="../../assets/img/xf.png" alt />
               <p>合同管理</p>
             </li>
-            <li class="more">
+            <li class="more" @click="goMd">
               <span>MORE +</span>
             </li>
           </ul>
@@ -48,11 +48,7 @@
           </div>
           <div class="dj-footer">
             <ul class="dj-footer-body">
-              <li
-                v-for="(item,index) in loadNewVideosD"
-                :key="index"
-                @click="open(item.resource_url)"
-              >
+              <li v-for="(item,index) in loadNewVideosD" :key="index" @click="dhDj(item.id)">
                 <img src="../../assets/img/videoimg.png" alt />
                 <span>{{ item.title }}</span>
               </li>
@@ -67,7 +63,7 @@
     <div class="swipert">
       <el-carousel indicator-position="outside" autoplay>
         <el-carousel-item v-for="(item,index) in swipert" :key="index">
-          <img :src="item" alt />
+          <img :src="item.url" alt @click="swipertId(item.id)" />
         </el-carousel-item>
       </el-carousel>
     </div>
@@ -76,21 +72,24 @@
     <div class="body-right">
       <div class="body-right-header">
         <h4 class="HH4">新闻关注</h4>
-        <span>
-          <a href="javascript:;">http://www.dahengzh.com/</a>
-        </span>
+        <el-carousel height="30px" direction="vertical" autoplay style="width:250px" loop>
+          <el-carousel-item v-for="item in blogroll" :key="item.id">
+            <a :href="item.urladdress" target="_blank" class="medium">{{ item.urladdress }}</a>
+          </el-carousel-item>
+        </el-carousel>
       </div>
+
       <div class="main" style="height:330px">
         <div class="main-header">
           <h4 class="HH4">最新动态</h4>
-          <span>
+          <span @click="goNews">
             更多信息
             <i class="iconfont icon-iconfontarrowdown"></i>
           </span>
         </div>
         <div class="dt-footer">
           <ul>
-            <li v-for="(item,index) in message" :key="index" @click="newsO(item.id)">
+            <li v-for="(item,index) in construction" :key="index" @click="newsO(item.id)">
               <p>
                 <i class="iconfont icon-file"></i>
                 <span>{{ item.title }}</span>
@@ -110,7 +109,7 @@
             <p>科技成果</p>
             <p>绿色建筑</p>
           </h4>
-          <span>
+          <span @click="goNews">
             更多信息
             <i class="iconfont icon-iconfontarrowdown"></i>
           </span>
@@ -118,7 +117,7 @@
         <div class="dt-footer">
           <ul>
             <li
-              v-for="(item,index) in construction"
+              v-for="(item,index) in message"
               :key="index"
               class="fl-gooter"
               @click="newsO(item.id)"
@@ -142,7 +141,7 @@
             <p>工会委员</p>
             <p>行业新闻</p>
           </h4>
-          <span>
+          <span @click="goNews">
             更多信息
             <i class="iconfont icon-iconfontarrowdown"></i>
           </span>
@@ -174,11 +173,7 @@
           </div>
           <div class="dj-footer">
             <ul class="dj-footer-body" style="height:280px">
-              <li
-                v-for="(item,index) in loadNewVideos"
-                :key="index"
-                @click="openS(item.resource_url)"
-              >
+              <li v-for="(item,index) in loadNewVideos" :key="index" @click="dhDj(item.id)">
                 <img src="../../assets/img/videoimg.png" alt />
                 <span>{{ item.title }}</span>
               </li>
@@ -195,7 +190,7 @@
     <div class="footer-r">
       <div class="main-header">
         <h4 class="HH4">工程展示</h4>
-        <span>
+        <span @click="gomanage">
           更多信息
           <i class="iconfont icon-iconfontarrowdown"></i>
         </span>
@@ -252,8 +247,9 @@ import {
   mainPropagandaPicture,
   loadByType,
   listLoad,
-  loadByTypeO
+  loadByTypeO,
 } from "../../network/home";
+import { async } from "q";
 
 export default {
   data() {
@@ -271,7 +267,8 @@ export default {
       loadNewVideos: [],
       message: [],
       construction: [],
-      news: []
+      news: [],
+      videourl: ""
     };
   },
   created() {
@@ -285,54 +282,56 @@ export default {
   },
   mounted() {},
   methods: {
+    dhDj(id) {
+      let routeUrl = this.$router.resolve({
+        path: "/videoInfo",
+        query: { id: id }
+      });
+      window.open(routeUrl.href, "_blank");
+    },
     handler({ BMap, map }) {
       this.center.lng = 113.571898;
       this.center.lat = 22.283535;
       this.zoom = 18;
     },
-    open(resource_url) {
-      this.$alert(
-        "<video  controls style='width:100%; height:100%' src = '" +
-          resource_url +
-          "' ></video>",
-        "视频",
-        {
-          dangerouslyUseHTMLString: true,
-          showConfirmButton: false
-        }
-      );
-    },
-    openS(resource_url) {
-      this.$alert(
-        "<video  controls style='width:100%; height:100%' src = '" +
-          resource_url +
-          "' ></video>",
-        "视频",
-        {
-          dangerouslyUseHTMLString: true,
-          showConfirmButton: false
-        }
-      );
-    },
+
     goMf() {
       window.open("http://www.dahengzh.com:8080/oa/userinfo/login");
+    },
+    goNews() {
+      this.$store.dispatch("setSearchKey", 1);
+
+      this.$router.push("/news");
+    },
+    gomanage() {
+      this.$router.push("/manage");
     },
     goMap() {
       this.$store.dispatch("setSearchKey", 8);
       this.$router.push("/contactUs");
     },
+    goMd() {
+      let routeUrl = this.$router.resolve({
+        path: "/messageDh"
+      });
+      window.open(routeUrl.href, "_blank");
+    },
     blogrollO(O) {
       window.open(O);
     },
     newsO(id) {
-      console.log(this.$store.commit("increment", 1));
-      this.$store.dispatch("setSearchKey", 1);
-      this.$router.push({
-        name: "news",
-        params: {
-          id: id
-        }
+      let routeUrl = this.$router.resolve({
+        path: "/newsInfo",
+        query: { id: id }
       });
+      window.open(routeUrl.href, "_blank");
+    },
+    swipertId(id) {
+      let routeUrl = this.$router.resolve({
+        path: "/swipertInfo",
+        query: { id: id }
+      });
+      window.open(routeUrl.href, "_blank");
     },
     //友情链接
     async getPortalListLoad() {
@@ -344,7 +343,12 @@ export default {
       const res = await getImgurls().then();
       var baseURL = res.config.baseURL + "/";
       res.data.forEach(element => {
-        this.swipert.push(baseURL + element.imgUrl);
+        var url = baseURL + element.imgUrl;
+        var id = element.id;
+        this.swipert.push({
+          url: url,
+          id: id
+        });
       });
     },
     //工程展示
@@ -377,7 +381,7 @@ export default {
         if (element.infotype == "message" || element.infotype == "green") {
           return this.message.push(element);
         }
-        if (element.infotype == "construction" || element.infotype == "study") {
+        if (element.infotype == "union" || element.infotype == "study") {
           return this.construction.push(element);
         }
         if (element.infotype == "news") {
@@ -480,6 +484,7 @@ export default {
       display: flex;
       justify-content: space-between;
       > img {
+        margin-top: 15px;
         width: 150px;
         height: 100px;
       }
@@ -508,9 +513,12 @@ export default {
     .body-right-header {
       margin-bottom: 10px;
       display: flex;
-      span {
-        margin-left: 30px;
-        line-height: 30px;
+      justify-content: space-between;
+      .el-carousel {
+        margin-right: 50px;
+      }
+      h4 {
+        height: 30px;
       }
     }
     .dt-footer {

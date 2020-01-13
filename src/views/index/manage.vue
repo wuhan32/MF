@@ -1,6 +1,5 @@
 <template>
   <div class="w">
-    <div class="body-b"></div>
     <div class="body-c">
       <div>
         <i class="iconfont icon-cjapp"></i>
